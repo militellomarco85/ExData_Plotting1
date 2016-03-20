@@ -1,4 +1,7 @@
 # plot3.R script
+# Language Difference
+# The name of the days are reported in Italian (the default language of my PC)!
+
 
 # 01 Download Data
 fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"

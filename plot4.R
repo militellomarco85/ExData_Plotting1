@@ -1,4 +1,7 @@
 # plot4.R script
+# Language Difference
+# The name of the days are reported in Italian (the default language of my PC)!
+
 
 # 01 Download Data
 fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
@@ -32,7 +35,7 @@ plot(data$datetime, data$Global_active_power, type = "l", xlab = "", ylab="Globa
 plot(data$datetime, data$Voltage, type = "l", xlab = "datetime", ylab="Voltage")
 
 
-with(data, plot(datetime, Sub_metering_1, type ="l", xlab = "", ylab="Energy by sub metering"), legend(c("Sub_metering_1" , "Sub_metering_2", "Sub_metering_3")))
+with(data, plot(datetime, Sub_metering_1, type ="l", xlab = "", ylab="Energy sub metering"), legend(c("Sub_metering_1" , "Sub_metering_2", "Sub_metering_3")))
 with(data, lines(datetime, Sub_metering_2, type ="l", col="red"))
 with(data, lines(datetime, Sub_metering_3, type ="l", col="blue"))
 legend("topright", col = c("black", "blue", "red"), legend = c("Sub_metering_1" , "Sub_metering_2", "Sub_metering_3"), lty=c(1,1), cex= 0.7, y.intersp = 0.3, bty = "n")
